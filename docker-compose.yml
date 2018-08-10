@@ -26,6 +26,7 @@ services:
     image: jgsqware/clairctl:latest
     restart: unless-stopped
     user: root
+    group_add: root
     environment: 
       - DOCKER_API_VERSION=1.24
     volumes:
